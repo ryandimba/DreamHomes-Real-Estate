@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties - Dream House Estate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="properties.html">Properties</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Search, Filter & Sort -->
+  <section class="search-filter">
+    <input type="text" id="searchInput" placeholder="Search by name or location...">
+    
+    <select id="priceFilter">
+      <option value="all">All Prices</option>
+      <option value="low">Below 10M</option>
+      <option value="mid">10M - 20M</option>
+      <option value="high">Above 20M</option>
+    </select>
+
+    <select id="sortPrice">
+      <option value="default">Sort by</option>
+      <option value="asc">Price: Low to High</option>
+      <option value="desc">Price: High to Low</option>
+    </select>
+  </section>
+
+  <!-- Properties List -->
+  <section class="property-grid" id="propertyList">
+    <div class="property-card" data-name="Modern 3BR Apartment" data-location="Kilimani" data-price="14500000">
+      <img src="images/house1.jpg" alt="Apartment">
+      <div class="content">
+        <h3>Modern 3BR Apartment</h3>
+        <p>Ksh 14,500,000 • Kilimani</p>
+        <a href="property.html">View</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-name="4BR Townhouse" data-location="Runda" data-price="32000000">
+      <img src="images/house2.jpg" alt="Townhouse">
+      <div class="content">
+        <h3>4BR Townhouse</h3>
+        <p>Ksh 32,000,000 • Runda</p>
+        <a href="property.html">View</a>
+      </div>
+    </div>
+
+    <div class="property-card" data-name="Cozy 1BR Apartment" data-location="Westlands" data-price="7800000">
+      <img src="images/house3.jpg" alt="1BR Apartment">
+      <div class="content">
+        <h3>Cozy 1BR Apartment</h3>
+        <p>Ksh 7,800,000 • Westlands</p>
+        <a href="property.html">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Dream House Estate. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
